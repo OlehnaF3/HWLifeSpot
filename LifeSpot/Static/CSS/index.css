@@ -1,0 +1,133 @@
+﻿/* Простые селекторы*/
+.video-container {
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 1%;
+    
+}
+
+header {
+    color: black;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+
+footer {
+    height:20px;
+    line-height:2px;
+    position: absolute;
+    bottom:0;
+    font-size: medium;
+    color: midnightblue;
+    padding-left:10px;
+}
+
+aside {
+    height: 160%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+    width: 10%;
+    position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+    z-index: 1; /* Сайд-бар будет поверх остальных элементов */
+    top: 0; /* Сайдбар будет в самой верхней части страницы */
+    left: 0;
+    background-color: #111; /* Черный цвет фона (задан в виде кода) */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    padding-top: 2%;
+    font-size: large;
+}
+
+aside p{
+    background-color:#111;
+}
+
+aside h2 {
+        background-color: #111;
+        overflow: hidden;
+}
+
+body {
+    padding-left: 11%;
+}
+
+.hv:hover{
+    background-color : aqua;
+}
+
+.hv{
+    font:100;
+}
+
+header h1{
+    color:#000000;
+}
+
+*{
+    background-color:antiquewhite;
+}
+
+header, footer, aside, body, .navbar, .video-container {
+    font-family: "Helvetica 65 Medium", sans-serif;
+}
+
+aside {
+    padding: 30px 24px;
+    background-color: #111;
+    width:auto;
+}
+
+aside ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    flex-direction:column;
+}
+
+aside li {
+    position: relative;
+    background-color: #111;
+}
+
+aside a {
+    color: #cbd5e1;
+    text-decoration: none;
+    background-color:#111;
+}
+
+    aside a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        background: linear-gradient(90deg, #ff6ec4, #7873f5);
+        border-radius: 3px;
+        transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    aside a:hover {
+        color: #fff;
+        text-shadow: 0 0 10px #ff6ec4, 0 0 20px #7873f5;
+        transform: scale(1.1);
+    }
+
+        aside a:hover::after {
+            width: 100%;
+        }
+
+
+#header-index{
+    color:#44453f;
+}
+
+input[type="text"]:not(:placeholder-shown) {
+    border-color: #44453f;
+    box-shadow: 0 0 8px #44453f;
+}
+/* Подсветка при фокусе */
+input[type="text"]:focus {
+    border-color: #2196f3;
+    box-shadow: 0 0 10px #2196f3aa;
+}
