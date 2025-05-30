@@ -1,22 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
-    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script src="/Static/Scripts/testingJs.js"></script>
 </head>
+<header id="header-index">
+    <h1>LifeSpot - тестовая страница</h1>
+    <p>Здесь можно экспериментировать с кодом</p>
+    <input name="box" type="text" oninput="handleInput()"/>
+    <script>handleSession()</script>
+</header>
+<!--SIDEBAR-->
 <body>
-    <header id="header-index">
-        <!--Заголовок страницы-->
-        <h1>LifeSpot — прямые трансляции с улиц</h1>
-        <!--Параграф-->
-        <p>Покажем, что происходит прямо сейчас</p>
-    </header>
-    <div style="position:absolute; right:20px; top:30px;
-        ">
-        <h3>Поиск по сайту:</h3>
-        <input type="text" oninput="handleInput()" style="background-color:#ffffff; width:200px; height:20px;"/>
-    </div>
     <div class="block">
         <div class="video-container">
             <h2>Нью-Йорк</h2>
@@ -25,7 +23,7 @@
             <p>В этом окне можно посмотреть на Нью-Йорк</p>
         </div>
         <div class="video-container">
-            <h2>Cанкт-Петербург</h2>
+            <h2>Санкт-Петербург</h2>
             <!--Санкт-Петербург-->
             <iframe width="420" height="250" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>В этом окне можно посмотреть на Санкт-Петербург</p>
@@ -37,18 +35,6 @@
             <p>В этом окне можно посмотреть на Лондон</p>
         </div>
     </div>
-    <footer>
-        <p>Сайт для просмотра трансляций улиц в разных городах</p>
-        <p>+78416541122</p>
-    </footer>
-    <div class="navbar">
-        <aside>
-            <ul>
-                <li><a href="/">Все трансляции</a></li>
-                <li><a href="/about">О проекте</a></li>
-            </ul>
-        </aside>
-    </div>
-    <script src="../Static/Scripts/script.js"></script>
 </body>
+<!--FOOTER-->
 </html>
